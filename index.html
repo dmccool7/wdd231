@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Dallas McCool">
+    <meta name="description" content="Home Page for WDD 231">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <img src="images/profile.webp" alt="profile-picture">
+        <h1>Dallas McCool</h1>
+        <a id="hamburger" href="#">☰</a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="chamber.html" id="chamber">Chamber</a></li>
+                <li><a href="final.html" id="final">Final</a></li>
+                <li><a href="https://github.com/dmccool7/wdd231" id="github">GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/in/dmccool" id="linkedin">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="top">
+            <h1>Home</h1>
+            <section>
+                <h2>Course Work</h2>
+                <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Arkansas, USA</h2>
+                <img src="images/bentonville.webp" alt="bentonville-temple">
+                <p>Bentonville, Arkansas</p>
+            </section>
+        </div>
+        <div class="bottom">
+            <h2>Web and Computer Programming Certificate</h2>
+            <nav>
+                <ul class="filter">
+                    <li><a href="#" id="all">All</a></li>
+                    <li><a href="#" id="cse">CSE</a></li>
+                    <li><a href="#" id="wdd">WDD</a></li>
+                </ul>
+            </nav>
+            <section class="courses"></section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Dallas McCool | Arkansas, USA <img src="images/arkansas.webp" alt="arkansas-flag"></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
