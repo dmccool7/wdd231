@@ -1,0 +1,33 @@
+{
+  "family_name": "McCool",
+  "move_in_date": "2024-11-02",
+  "number_of_people": 4,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Dallas McCool",
+      "gender": "Male",
+      "birthdate": "1997-02-25"
+    },
+    {
+      "name": "Mary McCool",
+      "gender": "Female",
+      "birthdate": "1998-05-20"
+    },
+    {
+      "name": "Malia McCool",
+      "gender": "Female",
+      "birthdate": "2021-12-06"
+    },
+    {
+      "name": "Molly McCool",
+      "gender": "Female",
+      "birthdate": "2021-12-06"
+    },
+    {
+      "name": "Jamie McCool",
+      "gender": "Male",
+      "birthdate": "2025-01-29"
+    }
+  ]
+}

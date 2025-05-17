@@ -1,0 +1,35 @@
+
+h1, h2 {
+	text-align: center;
+    font-family: "Poetsen One", sans-serif;
+    color: #581cff;
+}
+
+main {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#cards {
+    background-color: #d1d1d1;
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: #cac5f8;
+	border: 1px solid #581cff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img {
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+}
