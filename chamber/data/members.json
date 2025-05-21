@@ -4,7 +4,7 @@
             "name": "Mosquito Squad",
             "address": "3401 SW Municipal Dr, Bentonville, AR 72712",
             "phone": "479-515-7500",
-            "websiteURL": "mosquitosquad.com",
+            "websiteURL": "https://mosquitosquad.com",
             "image": "images/mosquad.webp",
             "membership": "Gold"
         },
@@ -12,7 +12,7 @@
             "name": "Mary's Photography",
             "address": "173 Main St, Bentonville, AR 72712",
             "phone": "479-454-0017",
-            "websiteURL": "mphoto.com",
+            "websiteURL": "https://mphoto.com",
             "image": "images/camera.webp",
             "membership": "Silver"
         },
@@ -20,7 +20,7 @@
             "name": "Morimori - Japanese Grill",
             "address": "123 SW Regional Airport Blvd, Bentonville, AR 72712",
             "phone": "479-219-4086",
-            "websiteURL": "morimori.co",
+            "websiteURL": "https://morimori.co",
             "image": "images/ramen.webp",
             "membership": "Member"
         },
@@ -28,7 +28,7 @@
             "name": "Crochet Critters",
             "address": "337 M St, Bentonville, AR 72712",
             "phone": "479-867-5309",
-            "websiteURL": "crochet.critters.us",
+            "websiteURL": "https://crochet.critters.us",
             "image": "images/crochet.webp",
             "membership": "Silver"
         },
@@ -36,7 +36,7 @@
             "name": "Dan's Skate Shop",
             "address": "67 Baker Ave, Bentonville, AR 72712",
             "phone": "479-787-4224",
-            "websiteURL": "danskates.net",
+            "websiteURL": "https://danskates.net",
             "image": "images/skate.webp",
             "membership": "Gold"
         },
@@ -44,7 +44,7 @@
             "name": "Benny's Pizza",
             "address": "138 7th Ave E, Bentonville, AR 72712",
             "phone": "479-236-9572",
-            "websiteURL": "bennys.pz",
+            "websiteURL": "https://bennys.pz",
             "image": "images/pizza.webp",
             "membership": "Member"
         },
@@ -52,7 +52,7 @@
             "name": "M&M's Bicycle Company",
             "address": "1206 Idaho Way, Bentonville, AR 72712",
             "phone": "479-269-1904",
-            "websiteURL": "mmbikes.com",
+            "websiteURL": "https://mmbikes.com",
             "image": "images/bike.webp",
             "membership": "Gold"
         }

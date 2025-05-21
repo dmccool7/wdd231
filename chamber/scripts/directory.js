@@ -31,7 +31,7 @@ const displayMembers = (members) => {
     name.textContent = member.name;
     address.textContent = member.address;
     phone.textContent = member.phone;
-    level.textContent = member.level;
+    level.textContent = member.membership;
     url.textContent = member.websiteURL;
     url.setAttribute('href', member.websiteURL);
     url.setAttribute('target', '_blank');
