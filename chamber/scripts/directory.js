@@ -9,7 +9,7 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("show");
 });
 
-const file = '';
+const file = 'https://dmccool7.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
@@ -33,7 +33,9 @@ const displayMembers = (members) => {
     phone.textContent = member.phone;
     level.textContent = member.level;
     url.textContent = member.websiteURL;
-    logo.setAttribute('src', member);
+    url.setAttribute('href', member.websiteURL);
+    url.setAttribute('target', '_blank');
+    logo.setAttribute('src', member.image);
     logo.setAttribute('alt', `Logo`);
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('width', '340');
