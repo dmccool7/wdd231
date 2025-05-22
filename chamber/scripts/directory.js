@@ -9,6 +9,20 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("show");
 });
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector('#cards');
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", () => {
+    display.classList.add("list");
+	display.classList.remove("grid");
+});
+
 const file = 'https://dmccool7.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
@@ -21,7 +35,7 @@ async function getMemberData() {
 const displayMembers = (members) => {
   members.forEach((member) => {
     let card = document.createElement('section');
-    let name = document.createElement('h2');
+    let name = document.createElement('h3');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let level = document.createElement('p');
@@ -36,7 +50,7 @@ const displayMembers = (members) => {
     url.setAttribute('href', member.websiteURL);
     url.setAttribute('target', '_blank');
     logo.setAttribute('src', member.image);
-    logo.setAttribute('alt', `Logo`);
+    logo.setAttribute('alt', `${member.name} Logo`);
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('width', '340');
 
