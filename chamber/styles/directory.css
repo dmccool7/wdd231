@@ -113,6 +113,7 @@ main h2 {
   border-radius: var(--border-radius);
   cursor: pointer;
   font-size: 1rem;
+  grid-column: 1 / -1;
 }
 
 #cards > button:hover {
@@ -124,10 +125,6 @@ main h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--gap);
-}
-
-#cards > button {
-  grid-column: 1 / -1;
 }
 
 #cards > section {
@@ -190,10 +187,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--gap);
-}
-
-footer section {
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer a img {
