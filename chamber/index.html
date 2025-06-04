@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bentonville Chamber Directory</title>
+    <title>Bentonville Chamber of Commerce</title>
     <meta name="author" content="Dallas McCool">
     <meta name="description" content="Business Directory page for the Chamber of Commerce website for Bentonville, Arkansas.">
     <link rel="icon" href="images/favicon.ico">
-    <meta property="og:title" content="Business Directory">
-    <meta property="og:description" content="Business Directory page for the Bentonville, Arkansas Chamber of Commerce website.">
+    <meta property="og:title" content="Bentonville Chamber of Commerce">
+    <meta property="og:description" content="Home page for the Bentonville, Arkansas Chamber of Commerce website.">
     <meta property="og:image" content="https://dmccool7.github.io/wdd231/chamber/images/chamber.webp">
-    <meta property="og:url" content="https://dmccool7.github.io/wdd231/chamber/directory.html"> 
+    <meta property="og:url" content="https://dmccool7.github.io/wdd231/chamber/index.html"> 
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,18 +23,36 @@
         <a id="hamburger" href="#"></a>
         <nav class="navigation">
             <ul>
-                <li><a href="index.html" id="home">Home</a></li>
-                <li class="active"><a href="directory.html" id="directory">Directory</a></li>
+                <li class="active"><a href="index.html" id="home">Home</a></li>
+                <li><a href="directory.html" id="directory">Directory</a></li>
                 <li><a href="join.html" id="join">Join</a></li>
                 <li><a href="discover.html" id="discover">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Bentonville Chamber Directory</h1>
-        <div id="cards">
-            <button id="grid">⊞ Grid</button>
-		    <button id="list">≣ List</button>
+        <div class="hero">
+            <img src="images/hero-xl.webp" alt="Crystal Bridges">
+            <a href="join.html">Join the Chamber</a>
+        </div>
+        <h1>Home</h1>
+        <div class="top">
+            <section>
+                <h2>Events</h2>
+                <ul>
+                    <li>June 13-14: Bike Festival </li>
+                    <li>June 15: Father's Day Luncheon</li>
+                    <li>June 22-28: Ozark Days</li>
+                    <li>June 30: Chamber of Commerce Board Meeting</li>
+                </ul>
+            </section>
+            <section id="weather">
+                <h2>Current Weather & Forecast</h2>
+            </section>
+        </div>
+        <div class="bottom">
+            <h2>June Spotlights</h2>
+            <section id="business-cards"></section>
         </div>
     </main>
     <footer>
