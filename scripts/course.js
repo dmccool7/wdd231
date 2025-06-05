@@ -83,18 +83,17 @@ const courseContainer = document.querySelector('.courses');
 function displayCourses(list) {
     courseContainer.innerHTML = '';
     list.forEach(course => {
-        const card = document.createElement('div');
+        const card = document.createElement('p');
         card.classList.add('course-card');
 
-        card.innerHTML = `
-            <h3>${course.subject} ${course.number} - ${course.title}</h3>
-            <p><strong>Credits:</strong> ${course.credits}</p>
-            <p><strong>Description:</strong> ${course.description}</p>
-            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
-            <p><strong>Completed:</strong> ${course.completed ? '✅' : '❌'}</p>
-        `;
-
+        card.innerHTML = `${course.subject} ${course.number}`;
+        if (course.completed == true) {
+            card.style.backgroundColor = 'green';
+        }
         courseContainer.appendChild(card);
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
     });
 }
 
@@ -123,3 +122,23 @@ document.querySelector('#wdd').addEventListener('click', (e) => {
 });
 
 displayCourses(courses);
+
+const courseDetails = document.querySelector('#course-details')
+
+function displayCourseDetails (course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}

@@ -107,6 +107,7 @@ section,
     border-radius: 0;
     padding: 1rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 footer {
@@ -119,4 +120,29 @@ footer img {
     height: 30px;
     vertical-align: middle;
     margin-left: 0.5rem;
+}
+
+dialog {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 3rem gray;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: darkslategray;
+    opacity: 85%;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
 }
