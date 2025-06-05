@@ -1,0 +1,18 @@
+*{box-sizing: border-box;}
+
+#openButton {
+    background-color: green;
+}
+
+#dialogBox {
+    background-color: slategray;
+}
+
+#closeButton {
+    background-color: gainsboro;
+}
+
+::backdrop {
+    background-color: slateblue;
+    opacity: 70%;
+}
