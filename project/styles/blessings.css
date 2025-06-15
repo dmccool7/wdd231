@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #9D2235;
+    --secondary-color: #C7C8CA;
+}
+
+* {
+    font-family: "Lato", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
+
+header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid white;
+    color: black;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    margin: 1rem;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+section p, h2 {
+    background-color: var(--primary-color);
+    padding: 0.25rem;
+    color: whitesmoke;
+}
+
+footer {
+    border-top: 1px solid white;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+body {
+    max-width: 1000px;
+    margin-inline: auto;
+    text-align: center;
+}
