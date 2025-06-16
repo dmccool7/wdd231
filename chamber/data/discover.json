@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "Crystal Bridges",
+            "address":  "600 Museum Way, Bentonville, AR 72712",
+            "description": "Museum of American Art containing a renowned collection ranging from Rockwell to Warhol in a striking structure set on 120 lush acres.",
+            "image": "images/crystal-bridges.webp"
+        },
+        {
+            "name": "Coler Mountain Bike Preserve",
+            "address": "2500 NW 3rd St, Bentonville, AR 72712",
+            "description": "Spans 300+ acres with over 17 miles of trails for all skill levels. Coler Mountain Bike Preserve is a must-visit for outdoor enthusiasts and mountain bikers alike.",
+            "image": "images/coler.webp"
+        },
+        {
+            "name": "Bentonville Community Center",
+            "address": "1101 SW Citizens Cir, Bentonville, AR 72712",
+            "description": "Community center with a gym, sports courts, pools, kids water park, library, and party rooms, as well as an outdoor park and childcare.",
+            "image": "images/community-center.webp"
+        },
+        {
+            "name": "Osage Park",
+            "address": "700 SW 16th St, Bentonville, AR 72712",
+            "description": "An urban oasis in Bentonville offering countless recreation opportunities! Lake Bentonville, wetlands, a boardwalk, picnic areas, food trucks, a climbing gym, and courts for tennis, pickleball, and archery.",
+            "image": "images/osage.webp"
+        },
+        {
+            "name": "Bentonville City Square",
+            "address": "100 N Main St, Bentonville, AR 72712",
+            "description": "Site of the Bentonville farmers' market and other events, this park features a fountain and The Spark Cafe.",
+            "image": "images/square.webp"
+        },
+        {
+            "name": "Compton Gardens & Arboretum",
+            "address": "312 N Main St, Bentonville, AR 72712",
+            "description": "A peaceful, 6.5-acre oasis celebrating the region’s natural beauty. Once the home of Dr. Neil Compton, a champion for the Buffalo River’s conservation, the gardens feature native plants, winding trails, and stunning hardwood trees. Visitors can explore scenic walking paths, spot local wildlife, and learn about sustainable landscaping.",
+            "image": "images/compton-gardens.webp"
+        },
+        {
+            "name": "Alice L. Walton School of Medicine",
+            "address": "1001 NE J St, Bentonville, AR 72712",
+            "description": "Founded in 2021, AWSOM is a nonprofit, four-year MD program that will enhance traditional medical education with the arts, humanities, and whole health principles. State-of-the-art medical facility, and taught by leading medical and scientific minds with a focus on physical, mental, emotional, and social health.",
+            "image": "images/awsom.webp"
+        },
+        {
+            "name": "The Walmart Museum",
+            "address": "105 N Main St, Bentonville, AR 72712",
+            "description": "The museum's mission is to educate, engage, and inspire visitors about the heritage of Walmart. Discover the journey from small-town store to a global retailer — and Mr. Sam's vision for helping people all over the world save money and live better.",
+            "image": "images/walmart.webp"
+        }
+    ]
+}
