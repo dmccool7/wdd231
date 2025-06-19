@@ -247,6 +247,11 @@ footer img {
     margin: 1rem;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     margin-inline: auto;
     text-align: center;
