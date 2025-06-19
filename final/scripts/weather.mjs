@@ -2,8 +2,9 @@ const dialog = document.querySelector("#dialog");
 const title = document.querySelector("#dialog h2");
 const closeButton = document.querySelector("#dialog button");
 const details = document.querySelector("#dialog p");
-const icon = document.querySelector("#dialog img");
+const icon = document.createElement("img");
 const clicker = document.querySelector("#clicker");
+dialog.appendChild(icon);
 
 const key = '7696238527342e516ea4164307cf9d81';
 const lat = 36.13;
