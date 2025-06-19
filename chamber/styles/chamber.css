@@ -170,8 +170,8 @@
 form {
   padding: 1rem;
   width: 100%;
-  border: 1px solid var(--accent-color);
-  border-radius: var(--border-radius);
+  border: 1px solid var(black);
+  border-radius: 8px;
   background-color: var(--primary-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Blessings Golf Club</title>
+    <title>Membership & Rates | Blessings Golf Club</title>
     <meta name="author" content="Dallas McCool">
-    <meta name="description" content="Home page for Blessings Golf Club in Fayetteville, AR">
+    <meta name="description" content="Membership and rates page for Blessings Golf Club in Fayetteville, AR">
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Blessings Golf Club">
-    <meta property="og:description" content="Home page for the Blessings Golf Club in Fayetteville, AR.">
+    <meta property="og:description" content="Membership and rates page for the Blessings Golf Club in Fayetteville, AR.">
     <meta property="og:image" content="https://dmccool7.github.io/wdd231/final/images/logo.webp">
-    <meta property="og:url" content="https://dmccool7.github.io/wdd231/final/index.html"> 
+    <meta property="og:url" content="https://dmccool7.github.io/wdd231/final/rates.html"> 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/blessings.css">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/rates.mjs" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
@@ -26,47 +26,32 @@
         <a id="hamburger" href="#"></a>
         <nav class="navigation">
             <ul>
-                <li class="active"><a href="index.html" id="home">Home</a></li>
-                <li><a href="rates.html" id="rates">Membership & Rates</a></li>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li class="active"><a href="rates.html" id="rates">Membership & Rates</a></li>
                 <li><a href="tee.html" id="tee">Tee Times</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/hero.webp" alt="Blessings">
-            <p>Check Current Conditions</p>
-            <dialog>
-            </dialog>
-        </div>
-        <div class="top">
-            <section>
-                <h2>Summer Tournaments (June - August)</h2>
-                <ul>
-                    <li>June 26-29: Summer Super Scramble </li>
-                    <li>July 12-13: Bud's Best Ball</li>
-                    <li>August 8-9: Midnight Match Play</li>
-                    <li>August 21-23: Sunrise Stroke Play</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Future Closures</h2>
-                <ul>
-                    <li>June 19: Juneteenth</li>
-                    <li>June 25: Scramble Setup</li>
-                    <li>July 4: Independence Day</li>
-                    <li>July 11: Maintenance</li>
-                    <li>September 1: Labor Day</li>
-                    <li>October 7: Maintenance</li>
-                    <li>November 11: Veterans Day</li>
-                    <li>November 23 - Spring 2026: Seasonal Shutdown</li>
-                </ul>
-            </section>
-        </div>
-        <div class="bottom">
-            <h2>University of Arkansas Golf Team Results</h2>
-            <section id="results-cards"></section>
-        </div>
+        <h1>Membership Information</h1>
+        <aside id="sidebar"></aside>
+        <div id="membership">
+            <form method="get" action="thankyou.html" id="formMembership">
+                <h2>Membership Application</h2>
+                <label>First Name <input type="text" name="first" autocomplete="given-name" title="Your First Name" required></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Email <input type="email" name="email" required placeholder="example@gmail.com"  title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="Your Phone Number" placeholder="555-555-5555" required></label>
+                <h4>Select Membership Level </h4>
+                <label><input type="radio" name="membership" value="Student" checked> Student Membership</label>
+                <label><input type="radio" name="membership" value="Adult"> Adult Membership</label>
+                <label><input type="radio" name="membership" value="Family"> Family Membership</label>
+                <label><input type="radio" name="membership" value="Senior"> Senior Membership</label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit">Apply Now</button>
+            </form>
+            <div id="member-rates"></div>
+       </div>
     </main>
     <footer>
         <section>
@@ -78,13 +63,13 @@
         </section>
         <section>
             <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook" width="40">
+                <img src="images/facebook.svg" alt="Facebook" width="40" loading="lazy">
             </a>
             <a href="https://x.com">
-                <img src="images/x.svg" alt="X" width="40">
+                <img src="images/x.svg" alt="X" width="40" loading="lazy">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram" width="40">
+                <img src="images/instagram.svg" alt="Instagram" width="40" loading="lazy">
             </a>
         </section>
         <section>
