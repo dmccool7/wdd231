@@ -15,15 +15,180 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-p {
-    font-weight: 300;
-}
-
 header {
     padding: 1rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid white;
     color: black;
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "h1"
+    "p"
+    "hamburger"
+    "nav";
+}
+
+header img {
+    max-width: 100px;
+    border-radius: 8px;
+    grid-area: image;
+    place-self: center;
+    margin: 0 1rem 0 0;
+}
+
+header h1 {
+    grid-area: h1;
+    place-self: center;
+    margin: 1rem;
+}
+
+header p {
+    grid-area: p;
+    place-self: center;
+}
+
+#hamburger {
+  font-size: 1.5rem;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+#hamburger::before {
+  content: '☰';
+}
+
+#hamburger.show::before {
+  content: '✕';
+}
+
+.navigation.show {
+    display: contents;
+}
+
+.navigation {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+}
+
+header li {
+    margin-bottom: 1rem;
+}
+
+header a {
+    background-color: #C7C8CA;
+    color: black;
+    padding-right: 1rem;
+}
+
+header a:hover {
+    color: whitesmoke;
+}
+
+.active a {
+    font-weight: 700;
+    color: #5e1c26;
+    cursor: default;
+}
+
+.active a:hover {
+    color: #5e1c26;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero p {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: #9D2235;
+    color: whitesmoke;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #9D2235;
+  display: grid;
+  padding: 2rem;
+  grid-template-rows: 1fr 2fr 1fr;
+  border-radius: 8px;
+}
+
+#dialog[open] h2 {
+    padding: 1rem;
+    grid-row: 1;
+}
+
+#dialog[open] button {
+    cursor: pointer;
+    background-color: #9D2235;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#dialog[open] img {
+    max-width: 150px;
+    background-color: #9D2235;
+    grid-row: 2;
+    place-self: center;
+}
+
+#dialog[open] p {
+    border: none;
+    text-transform: capitalize;
+    grid-row: 3;
+    position: absolute;
+    bottom: 2rem;
+    left: 10%;
+    cursor: default;
+}
+
+::backdrop {
+    background-color: darkgray;
+    opacity: 50%;
+}
+
+.top li {
+    background-color: #9D2235;
+    list-style-position: inside;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.top ul {
+    margin: 2rem 0 1rem 2rem;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 section {
@@ -45,10 +210,80 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
     color: black;
+    background-color: #9D2235;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer section {
+    border: none;
+    margin: 0;
+}
+
+footer img, span, a {
+    background-color: #9D2235;
+    text-decoration: none;
+}
+
+footer img {
+    margin: 1rem;
 }
 
 body {
-    max-width: 1000px;
     margin-inline: auto;
     text-align: center;
+}
+
+@media screen  and (min-width: 540px) {
+    .top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navigation {
+        display: grid;
+        grid-area: nav;
+        place-self: center;
+    }
+
+    header {
+        grid-template-areas: 
+        "image h1 nav"
+        "image p nav";
+    }
+
+    header img {
+        max-width: 100px;
+        border-radius: 8px;
+        grid-area: image;
+        place-self: center;
+        margin: 0 1rem 0 0;
+    }
+
+    header h1 {
+        grid-area: h1;
+        place-self: center;
+        margin: 0;
+    }
+
+    header p {
+        grid-area: p;
+        place-self: center;
+    }
+
+    header ul {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        justify-content: center;
+        flex-direction: row;
+    }
+
 }
